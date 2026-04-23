@@ -94,11 +94,11 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 * Allows configuration to be externalized from application code.
 * Can be consumed by Pods as:
     * Environment variables
-    * Mounted configuration files
-<br> 
-<br> ⚠️ Do not store sensitive data in ConfigMaps.
+    * Mounted configuration files  
+⚠️ Do not store sensitive data in ConfigMaps.
 
 ### Secret
+
 
 Designed to store sensitive information, including:
 
