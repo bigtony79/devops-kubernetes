@@ -280,7 +280,7 @@ minikube start --driver=docker
 
 ## Checking Minikube Status
 ``` 
- minikube statusShow
+ minikube status
 ```
 
 ## kubectl
