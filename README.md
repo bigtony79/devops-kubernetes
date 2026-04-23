@@ -41,12 +41,11 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 ### Worker Node
 
-A worker node is a virtual or physical machine that runs containerized applications.
-Each worker node hosts:
-
-* Pods
-* A container runtime (e.g., containerd)
-* kubelet and networking components
+* A worker node is a virtual or physical machine that runs containerized applications.
+* Each worker node hosts:
+    * Pods
+    * A container runtime (e.g., containerd)
+    * kubelet and networking components
 
 ### Pod
 
