@@ -96,8 +96,8 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
     * Environment variables
     * Mounted configuration files
 
-    
-⚠️ Do not store sensitive data in ConfigMaps.
+
+⚠️ **Do not store sensitive data in ConfigMaps.**
 
 ### Secret
 
