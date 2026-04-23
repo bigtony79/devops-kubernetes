@@ -73,44 +73,31 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
     - ClusterIP – Internal access only (default)
     - NodePort – Exposes a service on each node
     - LoadBalancer – Exposes a service externally
+* Ensures traffic is redirected to healthy Pods if one fails.
+
+### Ingress
+
+* Ingress manages external HTTP/HTTPS traffic into the cluster.
+* Enables:
+    * Host‑based routing
+    * Path‑based routing
+    * TLS termination
+* Requires an Ingress Controller (e.g., NGINX, Traefik, AWS ALB).
 
 
-Ensures traffic is redirected to healthy Pods if one fails.
+### ConfigMap
 
-
-Ingress
-
-Ingress manages external HTTP/HTTPS traffic into the cluster.
-Enables:
-
-Host‑based routing
-Path‑based routing
-TLS termination
-
-
-Requires an Ingress Controller (e.g., NGINX, Traefik, AWS ALB).
-
-
-ConfigMap
-
-Stores non‑confidential configuration data, such as:
-
-Database URLs
-Feature flags
-Application settings
-
-
-Allows configuration to be externalized from application code.
-Can be consumed by Pods as:
-
-Environment variables
-Mounted configuration files
-
-
-
+* Stores non‑confidential configuration data, such as:
+    * Database URLs
+    * Feature flags
+    * Application settings
+* Allows configuration to be externalized from application code.
+* Can be consumed by Pods as:
+    * Environment variables
+    * Mounted configuration files
 ⚠️ Do not store sensitive data in ConfigMaps.
 
-Secret
+### Secret
 
 Designed to store sensitive information, including:
 
