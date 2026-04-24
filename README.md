@@ -463,7 +463,7 @@ A typical Kubernetes configuration file consists of three main sections:
     metadata:  
         name: nginx-deployment
         labels:
-            app: nginxShow more lines
+            app: nginx
 ```
 
 ### Spec
