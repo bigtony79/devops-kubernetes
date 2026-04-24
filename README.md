@@ -605,3 +605,6 @@ kubectl get deployment nginx-deployment -o yaml > nginx-deployment.yaml
 * Labels and selectors are critical for component communication
 * YAML files enable declarative, version‑controlled infrastructure
 </details>
+
+## Projects
+1. [Deploying a MongoDB and Mongo Express into local K8s cluster] 
