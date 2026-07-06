@@ -1486,6 +1486,9 @@ admin.company.com     -> App3
 ✅ Services enable Kubernetes applications to remain resilient even when Pods are recreated or moved within the cluster.
 </details>
 
+<details>
+<summary>Volumes - Persisting Application Data</summary>
+</details>
 
 ## Projects
 1. [Deploying a MongoDB and Mongo Express into local K8s cluster] 
