@@ -978,11 +978,10 @@ my-namespace
 
 <details>
 <summary>Services - Connecting to applications inside the cluster</summary>
-Here's an expanded and refined version of your notes that is both technically accurate and suitable for a GitHub learning repository.
 
-# Kubernetes Services
+## Kubernetes Services
 
-## Why Do We Need Services?
+### Why Do We Need Services?
 
 Pods are the smallest deployable units in Kubernetes, but they are **ephemeral** by nature.
 
@@ -1043,7 +1042,7 @@ The Service automatically routes traffic to healthy Pods.
 
 ***
 
-# Viewing Pod IP Addresses
+## Viewing Pod IP Addresses
 
 To see IP addresses assigned to Pods:
 
@@ -1064,7 +1063,7 @@ Because these IPs can change, applications should generally connect through a Ku
 
 ***
 
-# Service Types
+## Service Types
 
 Kubernetes provides several Service types:
 
@@ -1075,9 +1074,9 @@ Kubernetes provides several Service types:
 
 ***
 
-# ClusterIP Service
+## ClusterIP Service
 
-## Default Service Type
+### Default Service Type
 
 If no type is specified, Kubernetes creates a **ClusterIP** Service.
 
@@ -1136,7 +1135,7 @@ nginx        ClusterIP   10.96.150.22
 
 ***
 
-# Service Discovery Using DNS
+## Service Discovery Using DNS
 
 Every Service receives a DNS name.
 
@@ -1156,7 +1155,7 @@ Kubernetes DNS automatically resolves the Service name to the ClusterIP.
 
 ***
 
-# Headless Service
+## Headless Service
 
 A **Headless Service** does not receive a ClusterIP.
 
@@ -1226,7 +1225,7 @@ Each Pod has its own predictable hostname.
 
 ***
 
-# NodePort Service
+## NodePort Service
 
 A NodePort Service exposes an application externally using a port on every cluster node.
 
@@ -1319,7 +1318,7 @@ As environments grow, managing many NodePorts becomes challenging.
 
 ***
 
-# LoadBalancer Service
+## LoadBalancer Service
 
 A LoadBalancer Service exposes an application externally through a cloud provider's load balancer.
 
@@ -1382,7 +1381,7 @@ http://20.85.10.100
 
 ***
 
-# Ingress vs LoadBalancer
+## Ingress vs LoadBalancer
 
 Many applications expose multiple services.
 
@@ -1485,9 +1484,6 @@ admin.company.com     -> App3
 ✅ In production environments, prefer **Ingress + LoadBalancer** instead of directly exposing applications through NodePort.
 
 ✅ Services enable Kubernetes applications to remain resilient even when Pods are recreated or moved within the cluster.
-
-
-
 </details>
 
 
