@@ -608,9 +608,6 @@ kubectl get deployment nginx-deployment -o yaml > nginx-deployment.yaml
 
 <details>
 <summary>Namespaces - Organizing components</summary>
-Here's a refined, GitHub-friendly version of your notes with improved accuracy, structure, grammar, and Kubernetes best practices.
-
-# Kubernetes Namespaces
 
 ## What is a Namespace?
 
@@ -618,7 +615,7 @@ A **Namespace** is a logical partition within a Kubernetes cluster that helps or
 
 Think of a Namespace as a **virtual cluster inside a physical Kubernetes cluster**. Namespaces allow multiple teams, environments, or applications to share the same cluster while keeping their resources separate.
 
-### Benefits of Namespaces
+## Benefits of Namespaces
 
 * Organize resources logically
 * Isolate workloads between teams and environments
@@ -657,9 +654,9 @@ kube-node-lease   Active   30d
 
 ***
 
-# Default Kubernetes Namespaces
+## Default Kubernetes Namespaces
 
-## kube-system
+### kube-system
 
 Contains Kubernetes system components.
 
@@ -677,7 +674,7 @@ Examples:
 
 ***
 
-## kube-public
+### kube-public
 
 Contains data that should be publicly readable within the cluster.
 
@@ -694,7 +691,7 @@ kubectl get configmap -n kube-public
 
 ***
 
-## kube-node-lease
+### kube-node-lease
 
 Stores **Lease objects** associated with cluster nodes.
 
@@ -708,7 +705,7 @@ Each node has its own Lease object in this namespace.
 
 ***
 
-## default
+### default
 
 The default namespace used when no namespace is explicitly specified.
 
@@ -722,9 +719,9 @@ The deployment will be created in the **default** namespace unless another names
 
 ***
 
-# Creating a Namespace
+## Creating a Namespace
 
-## Using kubectl
+### Using kubectl
 
 ```bash
 kubectl create namespace my-namespace
@@ -738,7 +735,7 @@ kubectl get namespaces
 
 ***
 
-## Using a YAML Manifest
+### Using a YAML Manifest
 
 ```yaml
 apiVersion: v1
@@ -755,7 +752,7 @@ kubectl apply -f namespace.yaml
 
 ***
 
-# Why Use Namespaces?
+## Why Use Namespaces?
 
 Without namespaces, all resources would be placed in the same logical space, making cluster management difficult as applications grow.
 
@@ -857,7 +854,7 @@ Examples:
 
 ***
 
-# Namespace Resource Scope
+## Namespace Resource Scope
 
 Most Kubernetes resources are **Namespaced**:
 
@@ -881,7 +878,7 @@ These resources exist at the cluster level and cannot be isolated within a names
 
 ***
 
-# ConfigMaps and Namespaces
+## ConfigMaps and Namespaces
 
 ConfigMaps are namespace-scoped resources.
 
@@ -903,7 +900,7 @@ If multiple namespaces require the same configuration, separate ConfigMaps must 
 
 ***
 
-# Communication Across Namespaces
+## Communication Across Namespaces
 
 Although resources are isolated by namespace, services can still communicate across namespaces.
 
@@ -923,7 +920,7 @@ This allows applications in one namespace to connect to services running in anot
 
 ***
 
-# Change the Active Namespace
+## Change the Active Namespace
 
 Instead of specifying a namespace in every command, you can change the current context's default namespace.
 
@@ -953,7 +950,7 @@ my-namespace
 
 ***
 
-# Key Takeaways
+## Key Takeaways
 
 ✅ Namespaces provide logical isolation within a Kubernetes cluster.
 
