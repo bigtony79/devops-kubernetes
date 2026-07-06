@@ -606,5 +606,9 @@ kubectl get deployment nginx-deployment -o yaml > nginx-deployment.yaml
 * YAML files enable declarative, version‑controlled infrastructure
 </details>
 
+<details>
+<summary>Namespaces - Organizing components</summary>
+</details>
+
 ## Projects
 1. [Deploying a MongoDB and Mongo Express into local K8s cluster] 
