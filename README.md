@@ -1467,7 +1467,7 @@ admin.company.com     -> App3
 
 ***
 
-# Key Takeaways
+## Key Takeaways
 
 ✅ Pods receive IP addresses, but Pod IPs are not permanent.
 
