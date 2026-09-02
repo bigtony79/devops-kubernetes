@@ -1771,4 +1771,4 @@ Used for:
 </details>
 
 ## Projects
-1. [Deploying a MongoDB and Mongo Express into local K8s cluster] (https://github.com/bigtony79/k8s-mongodb-mongoexpress) 
+1. [Deploying a MongoDB and Mongo Express into local K8s cluster](https://github.com/bigtony79/k8s-mongodb-mongoexpress) 
