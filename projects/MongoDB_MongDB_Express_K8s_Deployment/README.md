@@ -170,6 +170,8 @@ minikube service mongoexpress-service
 ```
 This opens the Mongo Express web interface in the browser, allowing secure interaction with the MongoDB instance running inside the Kubernetes cluster.
 
+![minikube service mongo-express-service](images/minikube-service-mongo-express.png)
+
 ![minikube mongo express browser tunnel](images/Mongo-express-login-page1.png)
 
 ![mongo express login page](images/Mongo-express-login-page2.png)
