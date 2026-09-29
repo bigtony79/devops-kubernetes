@@ -162,7 +162,6 @@ Here is an example on how to generate base64 encoded values:
     kubectl get service
 ```
 
-
 ### 7. Accessing the Application
 
 Once deployed, Mongo Express can be accessed locally using:
@@ -170,6 +169,10 @@ Once deployed, Mongo Express can be accessed locally using:
 minikube service mongoexpress-service
 ```
 This opens the Mongo Express web interface in the browser, allowing secure interaction with the MongoDB instance running inside the Kubernetes cluster.
+
+![minikube mongo express browser tunnel](images/Mongo-express-login-page1.png)
+
+![mongo express login page](images/Mongo-express-login-page2.png)
 
 ## Key Learnings
 
