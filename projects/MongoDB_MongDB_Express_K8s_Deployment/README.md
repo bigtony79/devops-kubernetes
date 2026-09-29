@@ -49,8 +49,10 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
 * Check for status
 
 ```
-    minikube status
+    minikube status    
 ```
+![minikube status](images/minikube-cluster-status.png)
+
 * Check for current context and nodes
 
 ```
@@ -64,9 +66,6 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
 ```
 
 ![minikube get nodes](images/kubectl-get-nodes.png)
-
-
-![minikube status](images/minikube-cluster-status.png)
 
 ### 2. Secure MongoDB Credentials
 
