@@ -91,6 +91,8 @@ Here is an example on how to generate base64 encoded values:
     kubectl get secrets
 ```
 
+![kubectl-get-secrets](images/kubectl-get-secrets.png)
+
 ### 3. Deploy MongoDB
 
 * Create a MongoDB Deployment referencing credentials from the Secret.
