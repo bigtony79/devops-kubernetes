@@ -156,13 +156,8 @@ Here is an example on how to generate base64 encoded values:
           nodePort: 30081
 ```
 
-* Use Minikube’s service tunnel to access Mongo Express via a browser.
-```
-    kubectl apply -f mongo-express.yaml
-    kubectl get service
-```
 
-### 7. Accessing the Application
+### 6. Accessing the Application
 
 Once deployed, Mongo Express can be accessed locally using:
 ```
