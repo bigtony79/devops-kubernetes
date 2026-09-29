@@ -16,6 +16,8 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 [Namespaces in Kubernetes](notes/Namespaces_Kubernetes.md)
 
+[Services in Kubernetes](notes/Services_Kubernetes.md)
+
 
 
 
