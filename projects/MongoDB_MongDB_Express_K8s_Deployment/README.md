@@ -136,7 +136,7 @@ Here is an example on how to generate base64 encoded values:
 
 ![kubectl mongo express log](images/kubectl-mongo-express-log.png)
 
-### 6. Expose Mongo Express Externally
+#### Expose Mongo Express Externally
 
 * Configure a LoadBalancer (NodePort) Service under **mongo-express.yaml** deployment configuration file.
 ```
