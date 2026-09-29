@@ -107,6 +107,8 @@ Here is an example on how to generate base64 encoded values:
     kubectl logs <mongodb-pod-name>
 ```
 
+![kubectl deployment output](images/kubectl-deployment-outputs-1.png)
+
 ### 4. Centralize Configuration with ConfigMap
 
 * Create a ConfigMap to store the MongoDB connection string.
