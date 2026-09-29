@@ -21,4 +21,4 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 [Volumes in Kubernetes](notes/Volumes_Kubernetes.md)
 
 ## Projects
-1. [Deploying a MongoDB and Mongo Express into local K8s cluster](https://github.com/bigtony79/k8s-mongodb-mongoexpress) 
+1. [Deploying a MongoDB and Mongo Express into local K8s cluster](projects/MongoDB_MongDB_Express_K8s_Deployment/README.md) 
