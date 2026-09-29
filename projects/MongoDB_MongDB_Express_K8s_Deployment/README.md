@@ -134,7 +134,7 @@ Here is an example on how to generate base64 encoded values:
 ```
 
 
-## 7. Accessing the Application
+### 7. Accessing the Application
 
 Once deployed, Mongo Express can be accessed locally using:
 ```
