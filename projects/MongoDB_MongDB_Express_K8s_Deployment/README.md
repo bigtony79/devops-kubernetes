@@ -37,7 +37,22 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
 ## Steps
 
 ### 1. Initialize Local Kubernetes Cluster 
+
 * Start a local Kubernetes cluster using Minikube.
+
+```
+    minikube start
+```
+
+[minikube start](images/minikube-cluster-start.png)
+
+Check for status
+
+```
+    minikube status
+```
+
+[minikube status](images/minikube-cluster-status.png)
 
 ### 2. Secure MongoDB Credentials
 
