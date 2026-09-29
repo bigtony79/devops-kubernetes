@@ -53,7 +53,7 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
 ```
 ![minikube status](images/minikube-cluster-status.png)
 
-* Check for current context and nodes
+* Check for current context, nodes and cluster info
 
 ```
     kubectl config current-context
@@ -66,6 +66,12 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
 ```
 
 ![minikube get nodes](images/kubectl-get-nodes.png)
+
+```
+    kubectl cluster-info
+```
+
+![minikube cluster info](images/kubectl-cluster-info.png)
 
 ### 2. Secure MongoDB Credentials
 
