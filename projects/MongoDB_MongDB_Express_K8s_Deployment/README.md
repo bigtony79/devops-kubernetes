@@ -46,11 +46,25 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
 
 ![minikube start](images/minikube-cluster-start.png)
 
-Check for status
+* Check for status
 
 ```
     minikube status
 ```
+* Check for current context and nodes
+
+```
+    kubectl config current-context
+```
+
+![minikube current context](images/kubectl-current-context.png)
+
+```
+    kubectl get nodes
+```
+
+![minikube get nodes](images/kubectl-get-nodes.png)
+
 
 ![minikube status](images/minikube-cluster-status.png)
 
