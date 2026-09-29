@@ -177,7 +177,7 @@ spec:
   clusterIP: None
 ```
 
-## Why Use a Headless Service?
+### Why Use a Headless Service?
 
 Sometimes clients need to communicate with a specific Pod instead of receiving traffic through a load balancer.
 
@@ -189,9 +189,9 @@ Sometimes clients need to communicate with a specific Pod instead of receiving t
 * DNS returns Pod IPs
 
 
-## Common Use Cases
+### Common Use Cases
 
-### Stateful Applications
+#### Stateful Applications
 
 Examples:
 
@@ -213,7 +213,7 @@ mysql-2
 
 Applications may need to communicate with a specific replica.
 
-### StatefulSets
+#### StatefulSets
 
 Headless Services are commonly used with StatefulSets.
 
@@ -236,7 +236,7 @@ spec:
   type: NodePort
 ```
 
-## How It Works
+### How It Works
 
 ```text
 Internet
@@ -250,7 +250,7 @@ ClusterIP Service
 Application Pods
 ```
 
-## Port Range
+### Port Range
 
 Default Kubernetes NodePort range:
 
@@ -272,32 +272,32 @@ Access:
 http://<Node-IP>:30080
 ```
 
-## Characteristics
+### Characteristics
 
 * External access to applications
 * Available on every worker node
 * Simple setup
 * Useful for testing and labs
 
-## Drawbacks
+### Drawbacks
 
-### Limited Security
+#### Limited Security
 
 The service is directly exposed through the node.
 
-### Port Management
+#### Port Management
 
 Must manage port assignments manually.
 
-### Not Cloud Native
+#### Not Cloud Native
 
 Provides no advanced traffic management.
 
-### Difficult to Scale
+#### Difficult to Scale
 
 As environments grow, managing many NodePorts becomes challenging.
 
-## Recommended Usage
+### Recommended Usage
 
 * Development
 * Learning Kubernetes
@@ -313,7 +313,7 @@ spec:
   type: LoadBalancer
 ```
 
-## How It Works
+### How It Works
 
 ```text
 Internet
@@ -333,21 +333,20 @@ Kubernetes automatically provisions a cloud load balancer when running in:
 * Azure
 * Google Cloud
 
-## Characteristics
+### Characteristics
 
 * Public IP Address
 * External access
 * Built-in load balancing
 * Managed by cloud provider
 
-## Example
+### Example
 
 ```bash
 kubectl get svc
 ```
 
 Output:
-
 
 ```text
 NAME         TYPE           EXTERNAL-IP
@@ -360,7 +359,7 @@ Applications can then be accessed through:
 http://20.85.10.100
 ```
 
-## Ingress vs LoadBalancer
+### Ingress vs LoadBalancer
 
 Many applications expose multiple services.
 
@@ -374,7 +373,7 @@ LoadBalancer -> App3
 
 This may require multiple external load balancers.
 
-## Ingress
+### Ingress
 
 Ingress acts as a smart HTTP/HTTPS router.
 
@@ -396,7 +395,7 @@ api.company.com       -> App2
 admin.company.com     -> App3
 ```
 
-## Benefits of Ingress
+### Benefits of Ingress
 
 * Single entry point
 * Host-based routing
