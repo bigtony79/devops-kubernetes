@@ -11,7 +11,7 @@ This section covers Minikube and kubectl, two essential tools for running and in
     * Testing manifests locally
     * Experimenting without a full multi‑node cluster
 
-## Key Features
+### Key Features
 
 * Comes with Docker pre‑installed as the container runtime.
 * Supports multiple drivers:
@@ -23,14 +23,14 @@ This section covers Minikube and kubectl, two essential tools for running and in
     * As a Docker container on your local machine
 
 
-## Starting Minikube
+### Starting Minikube
 
 ```
 minikube start --driver=docker
 ```
 
 
-## Checking Minikube Status
+### Checking Minikube Status
 
 ``` 
  minikube status
@@ -46,7 +46,7 @@ minikube start --driver=docker
     * Manage and debug workloads
 * kubectl communicates directly with the Kubernetes API server in the control plane.
 
-## Key Points
+### Key Points
 
 * Works with:
     * Local clusters (Minikube)
