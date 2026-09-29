@@ -84,7 +84,7 @@ Here is an example on how to generate base64 encoded values:
 ```
 * Ensured the secret was created before deploying MongoDB.
 ```
-    kubectl apply -f mongodb-secret.yaml
+    kubectl apply -f mongo-secret.yaml
 ```
 * Verify that you can see the secret
 ```
