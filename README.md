@@ -3,6 +3,7 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 ## Notes
 [Introduction to Kubernetes](notes/Introduction.md)
+
 [Main Kubernetes Components](notes/Main_Kubernetes_Components.md)
 
 <details>
