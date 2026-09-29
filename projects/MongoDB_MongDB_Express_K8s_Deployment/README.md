@@ -129,8 +129,12 @@ Here is an example on how to generate base64 encoded values:
 ```
     kubectl apply -f mongo-express.yaml
     kubectl get pod
+    kubectl get service
     kubectl logs <mongo-express-pod-name>
 ```
+![kubectl mongo express deployment 1](images/kubectl-mongo-express-deployment.png)
+
+![kubectl mongo express log](images/kubectl-mongo-express-log.png)
 
 ### 6. Expose Mongo Express Externally
 
