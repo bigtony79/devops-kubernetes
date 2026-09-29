@@ -118,6 +118,8 @@ Here is an example on how to generate base64 encoded values:
     kubectl get configMap
 ```
 
+![kubectl configMap](images/kubectl-configMap.png)
+
 ### 5. Deploy Mongo Express**  
 
 * Create a Mongo Express Deployment referencing:
