@@ -44,7 +44,7 @@ This self-study project demonstrates how to deploy MongoDB and Mongo Express on 
     minikube start
 ```
 
-[minikube start](images/minikube-cluster-start.png)
+![minikube start](images/minikube-cluster-start.png)
 
 Check for status
 
@@ -52,7 +52,7 @@ Check for status
     minikube status
 ```
 
-[minikube status](images/minikube-cluster-status.png)
+![minikube status](images/minikube-cluster-status.png)
 
 ### 2. Secure MongoDB Credentials
 
