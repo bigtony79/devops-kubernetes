@@ -3,8 +3,18 @@
 Kubernetes uses YAML configuration files to define and manage cluster resources such as Deployments, Pods, and Services. These files 
 describe the desired state of an application, which Kubernetes continuously works to maintain.
 
+## YAML as the Configuration Format
+
+* Kubernetes configuration files are typically written in YAML.
+* Declarative: you define what you want, not how to achieve it.
+* YAML files are:
+    * Stored alongside application code
+    * Version‑controlled in Git
+    * Applied using kubectl apply
+
 
 ## Structure of a Kubernetes Configuration File
+
 A typical Kubernetes configuration file consists of three main sections:
 
 ### Metadata
@@ -39,17 +49,7 @@ A typical Kubernetes configuration file consists of three main sections:
 * Kubernetes retrieves this information from etcd, which stores cluster state.
 * ❌ Never defined manually in YAML files.
 
-## YAML as the Configuration Format
-
-* Kubernetes configuration files are typically written in YAML.
-* Declarative: you define what you want, not how to achieve it.
-* YAML files are:
-    * Stored alongside application code
-    * Version‑controlled in Git
-    * Applied using kubectl apply
-
-
-## Template Section (Pod Blueprint)
+### Template Section (Pod Blueprint)
 
 For higher‑level objects such as Deployments, the configuration includes a template section.
 * The template:
