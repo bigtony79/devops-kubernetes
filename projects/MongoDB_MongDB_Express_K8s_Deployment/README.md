@@ -56,8 +56,8 @@ Check for status
 
 ### 2. Secure MongoDB Credentials
 
-* Created a Kubernetes Secret to store MongoDB root credentials.
-* Credentials were base64-encoded as required by Kubernetes.  
+* Create a Kubernetes Secret to store MongoDB root credentials.
+* Credentials are base64-encoded as required by Kubernetes.  
 Here is an example on how to generate base64 encoded values:
 ```
     echo -n 'username' | base64
@@ -74,9 +74,9 @@ Here is an example on how to generate base64 encoded values:
 
 ### 3. Deploy MongoDB
 
-* Created a MongoDB Deployment referencing credentials from the Secret.
-* Added a ClusterIP Service to expose MongoDB internally within the cluster.
-* Verified pod health and deployment status using kubectl.
+* Create a MongoDB Deployment referencing credentials from the Secret.
+* Add a ClusterIP Service to expose MongoDB internally within the cluster.
+* Verify pod health and deployment status using kubectl.
 ```
     kubectl apply -f mongodb.yaml
     kubectl get all
@@ -88,8 +88,8 @@ Here is an example on how to generate base64 encoded values:
 
 ### 4. Centralize Configuration with ConfigMap
 
-* Created a ConfigMap to store the MongoDB connection string.
-* Used the internal service name (mongodb-service:27017) for service discovery.
+* Create a ConfigMap to store the MongoDB connection string.
+* Use the internal service name (mongodb-service:27017) for service discovery.
 ```
     kubectl apply -f mongo-express-config.yaml
     kubectl get configMap
@@ -97,10 +97,10 @@ Here is an example on how to generate base64 encoded values:
 
 ### 5. Deploy Mongo Express**  
 
-* Created a Mongo Express Deployment referencing:
+* Create a Mongo Express Deployment referencing:
     - MongoDB credentials via Secret
     - MongoDB connection URL via ConfigMap
-* Verified successful startup using pod logs.
+* Verify successful startup using pod logs.
 ```
     kubectl apply -f mongo-express.yaml
     kubectl get pod
@@ -109,7 +109,7 @@ Here is an example on how to generate base64 encoded values:
 
 ### 6. Expose Mongo Express Externally
 
-* Configured a LoadBalancer (NodePort) Service under **mongo-express.yaml** deployment configuration file.
+* Configure a LoadBalancer (NodePort) Service under **mongo-express.yaml** deployment configuration file.
 ```
     ---
     apiVersion: v1
@@ -127,7 +127,7 @@ Here is an example on how to generate base64 encoded values:
           nodePort: 30081
 ```
 
-* Used Minikube’s service tunnel to access Mongo Express via a browser.
+* Use Minikube’s service tunnel to access Mongo Express via a browser.
 ```
     kubectl apply -f mongo-express.yaml
     kubectl get service
