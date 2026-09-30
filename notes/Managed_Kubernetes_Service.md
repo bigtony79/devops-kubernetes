@@ -59,7 +59,7 @@ Creating a Kubernetes cluster with LKE is straightforward: 
 3. Create the cluster with a few clicks.
 4. Download the kubeconfig file.
 5. Connect to the cluster using **kubectl**
- 
+
 Because the Kubernetes control plane is managed by Linode, administrators can focus on running applications rather than maintaining cluster infrastructure.
  
 ## Data Persistence 
