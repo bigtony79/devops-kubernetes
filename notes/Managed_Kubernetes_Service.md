@@ -51,7 +51,7 @@ Examples of managed Kubernetes services include:
 - Google Kubernetes Engine (GKE)
 - Linode Kubernetes Engine (LKE)
 
-# Example: Linode Kubernetes Engine (LKE)
+### Example: Linode Kubernetes Engine (LKE)
  
 Creating a Kubernetes cluster with LKE is straightforward: 
 1. Select worker node specifications (CPU, RAM, and storage).
