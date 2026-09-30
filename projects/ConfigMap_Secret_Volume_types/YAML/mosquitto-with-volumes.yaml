@@ -19,13 +19,13 @@ spec:
             image: eclipse-mosquitto:2.0
             ports:
               - containerPort: 1883
-            volumeMounts: 
+            volumeMounts: # mount volume in containers inside pod
               - name: mosquitto-config
                 mountPath: /mosquitto/config
               - name: mosquitto-secret
                 mountPath: /mosquitto/secret
-                readOnly: true
-        volumes:
+                readOnly: true # does not allow the file to be modified
+        volumes: # mounts volumes in pod
           - name: mosquitto-config
             configMap:
               name: mosquitto-config-file
