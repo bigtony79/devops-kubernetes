@@ -26,6 +26,8 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 [Managed Kubernetes Services](notes/Managed_Kubernetes_Service.md)
 
+[Helm Package Manager for Kubernetes](notes/Helm_Package_Manager_for_Kubernetes.md)
+
 ## Projects
 
 1. [Deploy a MongoDB and Mongo Express into local K8s cluster](projects/MongoDB_MongDB_Express_K8s_Deployment/) 
