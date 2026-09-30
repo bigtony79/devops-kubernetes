@@ -28,9 +28,7 @@ With an unmanaged Kubernetes deployment, you are responsible for setting up and 
 - Must handle upgrades, monitoring, scaling, and disaster recovery.
  
 While this approach is possible, it requires considerable effort and is often impractical when rapid deployment and simplicity are priorities.
- 
----
- 
+
 ## Option 2: Managed Kubernetes Service
  
 A managed Kubernetes service simplifies cluster deployment and operations by offloading much of the infrastructure management to the cloud provider.
@@ -57,9 +55,7 @@ Examples of managed Kubernetes services include:
 - Azure Kubernetes Service (AKS)
 - Google Kubernetes Engine (GKE)
 - Linode Kubernetes Engine (LKE)
- 
----
- 
+
 # Example: Linode Kubernetes Engine (LKE)
  
 Creating a Kubernetes cluster with LKE is straightforward:
@@ -72,11 +68,9 @@ Creating a Kubernetes cluster with LKE is straightforward:
  
 Because the Kubernetes control plane is managed by Linode, administrators can focus on running applications rather than maintaining cluster infrastructure.
  
----
+## Data Persistence
  
-# Data Persistence
- 
-## Unmanaged Kubernetes Cluster
+### Unmanaged Kubernetes Cluster
  
 When deploying a stateful application, such as MongoDB, you must configure storage yourself.
  
@@ -90,7 +84,7 @@ Typical steps include:
 
 This provides maximum flexibility but requires additional administration.
 
-## Managed Kubernetes Cluster
+### Managed Kubernetes Cluster
 
 Managed Kubernetes services simplify storage management through Storage Classes.
 
@@ -115,9 +109,9 @@ Database Pod
 
 This allows developers to focus on applications rather than storage infrastructure.
 
-# Load Balancing
+## Load Balancing
 
-## Unmanaged Kubernetes Cluster
+### Unmanaged Kubernetes Cluster
 
 In a self-managed cluster, you are typically responsible for configuring external access.
 
@@ -149,7 +143,7 @@ Examples of Ingress Controllers:
 * Traefik
 * HAProxy Ingress
 
-## Managed Kubernetes Service
+### Managed Kubernetes Service
 
 Most cloud providers offer managed load balancers that can be integrated directly with Kubernetes.
 
@@ -183,13 +177,13 @@ Benefits:
 * Useful for applications that maintain user session data locally.
 * Improves user experience for stateful web applications.
 
-# SSL/TLS Certificates
+## SSL/TLS Certificates
 
 Securing application traffic is essential in production environments.
 
 A common Kubernetes solution is cert-manager, which automates certificate management.
 
-## Benefits of cert-manager
+### Benefits of cert-manager
 * Automatic certificate provisioning.
 * Automatic certificate renewal.
 * Integration with Let's Encrypt and other certificate authorities.
@@ -209,13 +203,13 @@ TLS Certificate Managed by cert-manager
 Application
 ```
 
-# Moving Applications Between Cloud Providers
+## Moving Applications Between Cloud Providers
 
 One of Kubernetes' major advantages is workload portability.
 
 However, complete portability becomes more challenging when applications depend heavily on cloud-specific services.
 
-## Vendor Lock-In
+### Vendor Lock-In
 
 Vendor lock-in occurs when an application becomes tightly coupled to services provided by a specific cloud provider.
 
@@ -226,7 +220,7 @@ Examples:
 * Cloud-specific networking features
 * Provider-specific load balancers
 
-### Challenges
+#### Challenges
 
 When migrating to another cloud provider:
 
@@ -243,7 +237,7 @@ When migrating to another cloud provider:
 * Implement Infrastructure as Code (Terraform).
 * Design applications to be cloud-agnostic.
 
-# Summary
+## Summary
 
 Managed Kubernetes services significantly reduce the operational burden of running Kubernetes by handling control plane management, storage integration, and load balancing. While unmanaged clusters provide greater control, they require substantial effort to maintain.
 
