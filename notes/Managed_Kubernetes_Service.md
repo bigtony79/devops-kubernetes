@@ -92,10 +92,10 @@ Benefits include:
 Database Pod
 |
 +--> PVC
-|
-+--> Storage Class
-|
-+--> Dynamically Created Volume
+    |
+    +--> Storage Class
+        |
+        +--> Dynamically Created Volume
 ```
 
 This allows developers to focus on applications rather than storage infrastructure.
