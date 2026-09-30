@@ -1,10 +1,6 @@
 # Managed Kubernetes Services
  
-## Managed vs. Unmanaged Kubernetes Clusters
- 
 When deploying Kubernetes, you can either manage the cluster yourself or use a managed Kubernetes service provided by a cloud provider.
- 
----
  
 ## Option 1: Unmanaged Kubernetes Cluster
  
