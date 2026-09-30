@@ -23,6 +23,7 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 [ConfigMap and Secrets as Volumes in Kubernetes](notes/ConfigMap_Secrets_K8s_volumes.md)
 
 ## Projects
+
 1. [Deploy a MongoDB and Mongo Express into local K8s cluster](projects/MongoDB_MongDB_Express_K8s_Deployment/) 
 
 2. [Deploy Mosquitto message broker with ConfigMap and Secret Volume Types](projects/ConfigMap_Secret_Volume_types/)
