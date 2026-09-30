@@ -13,14 +13,12 @@ With an unmanaged Kubernetes deployment, you are responsible for setting up and 
 4. Deploy applications to the cluster.
 5. Manage upgrades, security, backups, monitoring, and troubleshooting.
  
-### Advantages
- 
+### Advantages 
 - Full control over the Kubernetes environment.
 - Greater flexibility in cluster configuration.
 - Potentially lower infrastructure costs in some scenarios.
  
-### Challenges
- 
+### Challenges 
 - Significant operational overhead.
 - Requires Kubernetes expertise.
 - Responsible for maintaining the control plane and worker nodes.
@@ -32,16 +30,14 @@ While this approach is possible, it requires considerable effort and is often im
  
 A managed Kubernetes service simplifies cluster deployment and operations by offloading much of the infrastructure management to the cloud provider.
  
-### Benefits
- 
+### Benefits 
 - No need to install Kubernetes from scratch.
 - Most cluster components are automatically provisioned.
 - Control plane management is handled by the cloud provider.
 - Faster deployment with minimal configuration.
 - Reduced operational effort and maintenance.
  
-### Typical Workflow
- 
+### Typical Workflow 
 1. Select the number of worker nodes.
 2. Choose node size (CPU, memory, storage).
 3. Select the deployment region.
@@ -50,7 +46,6 @@ A managed Kubernetes service simplifies cluster deployment and operations by off
  
 
 Examples of managed Kubernetes services include:
- 
 - Amazon EKS (Elastic Kubernetes Service)
 - Azure Kubernetes Service (AKS)
 - Google Kubernetes Engine (GKE)
@@ -58,8 +53,7 @@ Examples of managed Kubernetes services include:
 
 # Example: Linode Kubernetes Engine (LKE)
  
-Creating a Kubernetes cluster with LKE is straightforward:
- 
+Creating a Kubernetes cluster with LKE is straightforward: 
 1. Select worker node specifications (CPU, RAM, and storage).
 2. Choose the data center region.
 3. Create the cluster with a few clicks.
