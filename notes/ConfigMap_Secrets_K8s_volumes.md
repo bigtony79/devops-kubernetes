@@ -10,9 +10,7 @@ Common use cases include:
 - Externalizing configuration so it can be updated independently of application deployments.
 - Storing data as key-value pairs or as files that can be mounted into containers.
 - Keeping environment-specific settings separate from application code.
- 
----
- 
+  
 ## ConfigMaps as Files
  
 While ConfigMaps are commonly consumed as environment variables, they can also be mounted as configuration files within a Pod.
