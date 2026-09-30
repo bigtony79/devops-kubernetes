@@ -22,6 +22,8 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 [ConfigMap and Secrets as Volumes in Kubernetes](notes/ConfigMap_Secrets_K8s_volumes.md)
 
+[StatefulSets in Kubernetes](notes/StatefulSet.md)
+
 ## Projects
 
 1. [Deploy a MongoDB and Mongo Express into local K8s cluster](projects/MongoDB_MongDB_Express_K8s_Deployment/) 
