@@ -6,8 +6,7 @@ When deploying Kubernetes, you can either manage the cluster yourself or use a m
  
 With an unmanaged Kubernetes deployment, you are responsible for setting up and maintaining the entire cluster.
  
-### Typical Process
- 
+### Typical Process 
 1. Provision virtual machines or cloud instances.
 2. Install and configure Kubernetes components.
 3. Configure networking and cluster communication.
@@ -49,6 +48,7 @@ A managed Kubernetes service simplifies cluster deployment and operations by off
 4. Create the cluster.
 5. Connect using `kubectl` and begin deploying applications.
  
+
 Examples of managed Kubernetes services include:
  
 - Amazon EKS (Elastic Kubernetes Service)
