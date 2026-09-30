@@ -62,14 +62,12 @@ Creating a Kubernetes cluster with LKE is straightforward: 
  
 Because the Kubernetes control plane is managed by Linode, administrators can focus on running applications rather than maintaining cluster infrastructure.
  
-## Data Persistence
- 
+## Data Persistence 
 ### Unmanaged Kubernetes Cluster
  
 When deploying a stateful application, such as MongoDB, you must configure storage yourself.
  
-Typical steps include:
- 
+Typical steps include: 
 1. Provision physical or cloud storage.
 2. Create Persistent Volumes (PVs).
 3. Create Persistent Volume Claims (PVCs).
@@ -85,7 +83,6 @@ Managed Kubernetes services simplify storage management through Storage Classes.
 For example, LKE provides a default Storage Class that automatically provisions storage when a Persistent Volume Claim is created.
 
 Benefits include:
-
 * Automatic volume provisioning.
 * No manual volume creation.
 * Simplified storage management.
@@ -125,14 +122,12 @@ Pods
 ```
 
 Responsibilities include:
-
 * Installing and managing an Ingress Controller.
 * Configuring routing rules.
 * Managing certificates.
 * Scaling and maintaining load balancing infrastructure.
 
 Examples of Ingress Controllers:
-
 * NGINX Ingress Controller
 * Traefik
 * HAProxy Ingress
@@ -142,7 +137,6 @@ Examples of Ingress Controllers:
 Most cloud providers offer managed load balancers that can be integrated directly with Kubernetes.
 
 Benefits include:
-
 * Automatic load balancer provisioning.
 * High availability.
 * Simplified routing configuration.
@@ -166,7 +160,6 @@ Pods
 Cloud load balancers often support session affinity (sticky sessions).
 
 Benefits:
-
 * Client requests consistently reach the same application instance.
 * Useful for applications that maintain user session data locally.
 * Improves user experience for stateful web applications.
@@ -208,7 +201,6 @@ However, complete portability becomes more challenging when applications depend 
 Vendor lock-in occurs when an application becomes tightly coupled to services provided by a specific cloud provider.
 
 Examples:
-
 * Proprietary storage services
 * Cloud-specific databases
 * Cloud-specific networking features
@@ -217,14 +209,12 @@ Examples:
 #### Challenges
 
 When migrating to another cloud provider:
-
 * Application configurations may require changes.
 * Infrastructure code may need updates.
 * Storage and networking components may need redesign.
 * Some application code may require modification.
 
 ### Best Practices to Reduce Vendor Lock-In
-
 * Use Kubernetes-native resources whenever possible.
 * Avoid excessive reliance on cloud-specific features.
 * Use standard Kubernetes Storage Classes and Ingress resources.
