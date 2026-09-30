@@ -86,7 +86,7 @@ This allows us to inspect the default Mosquitto configuration packaged within th
 
 INSERT SCREENSHOT of default mosquitto.conf file
 
-## 2. Delete the existing mosquitto-without-volumes deployment
+### 2. Delete the existing mosquitto-without-volumes deployment
 
 Remove the deployment before deploying the new version with mounted volumes.
 
