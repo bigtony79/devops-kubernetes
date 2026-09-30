@@ -1,7 +1,5 @@
 # ConfigMaps and Secrets as Kubernetes Volumes
  
-## When Should You Use ConfigMaps and Secrets?
- 
 **ConfigMaps** and **Secrets** are Kubernetes resources used to provide configuration data and sensitive information to Pods without hardcoding values into container images.
  
 Common use cases include:
