@@ -24,6 +24,8 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 [StatefulSets in Kubernetes](notes/StatefulSet.md)
 
+[Managed Kubernetes Services](notes/Managed_Kubernetes_Service.md)
+
 ## Projects
 
 1. [Deploy a MongoDB and Mongo Express into local K8s cluster](projects/MongoDB_MongDB_Express_K8s_Deployment/) 
