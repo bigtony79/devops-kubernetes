@@ -79,7 +79,7 @@ Examine the pod
     ls
     cd config/
     ls
-    more mosquitto.conf
+    cat mosquitto.conf
     exit
 ```
 This allows us to inspect the default Mosquitto configuration packaged within the container image.
