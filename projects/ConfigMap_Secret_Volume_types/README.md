@@ -112,7 +112,7 @@ Verify the resources
     kubectl get secret
 ```
 
-INSERT SCREENSHOT
+![Deployment with volumes](images/mosquitto-with-volumes-deployment-1.png)
 
 ### 4. Mount the ConfigMap and Secret as Volumes
 
@@ -155,7 +155,7 @@ Verify the pod:
     kubectl get pod   
 ```
 
-INSERT SCREENSHOT
+![Deployment with volumes](images/mosquitto-with-volumes-deployment-2.png)
 
 #### Verify the mounted files
 
@@ -183,7 +183,7 @@ View the mounted configuration file:
     cat mosquitto.conf
 ```
 
-INSERT SCREENSHOTS
+![Deployment with volumes](images/mosquitto-with-volumes-deployment-3.png)
 
 ## Learning outcomes
 
