@@ -93,7 +93,7 @@ Remove the deployment before deploying the new version with mounted volumes.
 ```
     kubectl delete -f mosquitto-without-volumes.yaml
 ```
-INSERT SCREENSHOT
+![Deployment without volumes](images/mosquitto-without-volumes-deployment-4.png)
 
 The remaining steps demonstrate how Kubernetes ConfigMaps and Secrets can be mounted into containers as volumes.
 
