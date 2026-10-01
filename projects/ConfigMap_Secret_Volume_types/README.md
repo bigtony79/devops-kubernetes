@@ -174,6 +174,8 @@ View the mounted secret file:
     cd secret
     cat secret.file
 ```
+
+![Deployment with volumes](images/mosquitto-with-volumes-deployment-3.png)
     
 View the mounted configuration file:
 
@@ -183,7 +185,7 @@ View the mounted configuration file:
     cat mosquitto.conf
 ```
 
-![Deployment with volumes](images/mosquitto-with-volumes-deployment-3.png)
+![Deployment with volumes](images/mosquitto-with-volumes-deployment-4.png)
 
 ## Learning outcomes
 
