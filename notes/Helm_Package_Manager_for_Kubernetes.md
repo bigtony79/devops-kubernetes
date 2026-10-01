@@ -83,7 +83,7 @@ Benefits:
 - Standardized deployment patterns.
 - Centralized application management.
 
-# Helm Templating Engine
+## Helm Templating Engine
 
 One of Helm's most powerful features is its templating engine.
 
@@ -214,7 +214,7 @@ helm install my-app my-chart \
 
 This allows a single chart to be reused across all environments while keeping environment-specific settings separate.
 
-# Helm Chart Structure
+## Helm Chart Structure
 
 A typical Helm chart has the following directory structure:
 
@@ -228,7 +228,7 @@ mychart/
 └── README.md
 ```
 
-## Chart.yaml
+### Chart.yaml
 
 The `Chart.yaml` file contains metadata about the chart.
 
@@ -250,7 +250,7 @@ Typical information includes:
 - Application version
 - Dependency information
 
-## values.yaml
+### values.yaml
 
 Contains the default configuration values used by templates.
 
@@ -267,7 +267,7 @@ image:
 These values can be overridden during installation or upgrades.
 
 
-## charts/
+### charts/
 
 The `charts/` directory stores chart dependencies.
 
@@ -282,7 +282,7 @@ charts/
 Dependencies can also be declared in `Chart.yaml` and automatically downloaded.
 
 
-## templates/
+### templates/
 
 The `templates/` directory contains Kubernetes manifest templates.
 
@@ -300,7 +300,7 @@ templates/
 
 Helm replaces template placeholders with values during installation.
 
-# Installing a Helm Chart
+## Installing a Helm Chart
 
 Install a chart:
 
@@ -342,7 +342,7 @@ Benefits:
 - Identify configuration errors before deployment.
 
 
-# Release Management
+## Release Management
 
 One of Helm's most valuable features is its built-in release management.
 
@@ -357,7 +357,7 @@ A release tracks:
 - Rollback points
 
 
-## View Installed Releases
+### View Installed Releases
 
 ```bash
 helm list
@@ -371,13 +371,13 @@ my-release   default     1
 ```
 
 
-## Install a Release
+### Install a Release
 
 ```bash
 helm install my-release my-chart
 ```
 
-## Upgrade a Release
+### Upgrade a Release
 
 Update an existing deployment:
 
@@ -392,7 +392,7 @@ helm upgrade my-release my-chart \
   --values prod-values.yaml
 ```
 
-## View Release History
+### View Release History
 
 ```bash
 helm history my-release
@@ -407,7 +407,7 @@ REVISION    STATUS       CHART
 3           deployed     nginx-1.2.0
 ```
 
-## Roll Back a Release
+### Roll Back a Release
 
 Revert to a previous release version:
 
@@ -421,7 +421,7 @@ Benefits:
 - Minimal downtime.
 - Safe and repeatable application updates.
 
-## Uninstall a Release
+### Uninstall a Release
 
 Remove a deployed application:
 
@@ -431,7 +431,7 @@ helm uninstall my-release
 
 This removes all Kubernetes resources associated with the release.
 
-# Why Helm is Important
+## Why Helm is Important
 
 Managing Kubernetes applications manually often involves maintaining dozens or even hundreds of YAML manifest files.
 
@@ -449,7 +449,7 @@ Helm simplifies this process by providing:
 For these reasons, Helm has become one of the most widely adopted tools in the Kubernetes ecosystem.
 
 
-# Helm Workflow Example
+## Helm Workflow Example
 
 The following diagram shows a typical Helm workflow:
 
@@ -469,7 +469,7 @@ Chart Templates + values.yaml
       Helm Release
 ```
 
-# Summary
+## Summary
 
 Helm is the package manager for Kubernetes that simplifies the deployment and management of applications through reusable **Charts**. By combining templating, centralized configuration, dependency management, and release tracking, Helm enables teams to deploy applications consistently across development, staging, and production environments.
 
