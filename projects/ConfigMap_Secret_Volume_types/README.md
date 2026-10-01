@@ -61,7 +61,7 @@ Deploy the Mosquitto application using its default configuration.
     kubectl apply -f mosquitto-without-volumes.yaml
 ```
 
-INSERT SCREENSHOT
+![Deployment without volumes](images/mosquitto-without-volumes-deployment-1.png)
 
 Verify that the pod is running:
 
@@ -69,7 +69,7 @@ Verify that the pod is running:
     kubectl get pod
 ```
 
-INSERT SCREENSHOT
+![Deployment without volumes](images/mosquitto-without-volumes-deployment-2.png)
 
 Examine the pod
 ``` 
@@ -84,7 +84,7 @@ Examine the pod
 ```
 This allows us to inspect the default Mosquitto configuration packaged within the container image.
 
-INSERT SCREENSHOT of default mosquitto.conf file
+![Deployment without volumes](images/mosquitto-without-volumes-deployment-3.png)
 
 ### 2. Delete the existing mosquitto-without-volumes deployment
 
