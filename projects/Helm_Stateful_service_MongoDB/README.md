@@ -232,6 +232,7 @@ Verify that:
  
 ![helm_mongodb_pods](images/helm-mongodb_kubectl_get_all_1.png)
 ![helm_mongodb_pods](images/helm_mongodb_install_kubectl-get_secrets.png)
+![helm_mongodb_pods](images/helm-mongodb_kubectl_get_secret-details-1.png)
 
 #### g. Verify Persistent Storage
  
