@@ -119,7 +119,7 @@ If no cluster is configured, an error similar to the following may be displayed:
 The connection to the server localhost:8080 was refused
 ```
  
-INSERT SCREENSHOTS
+![set_kubectl](images/set_kubectl_linode_1.png)
  
 Configure kubectl to use the downloaded kubeconfig file:
  
