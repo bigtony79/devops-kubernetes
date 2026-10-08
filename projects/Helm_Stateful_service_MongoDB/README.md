@@ -253,7 +253,10 @@ mongodb-0 -> PVC -> Volume
 mongodb-1 -> PVC -> Volume
 mongodb-2 -> PVC -> Volume
 ```
- 
+
+![LKE_Volumes](images/LKE-persistent-volumes-1.png) 
+
+
 INSERT SCREENSHOTS
 
 ### 6. Deploy Mongo Express and Configure External Access
