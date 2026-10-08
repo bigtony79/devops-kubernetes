@@ -84,11 +84,11 @@ In this project, the Kubernetes control plane is fully managed by Linode, allowi
 ### 2. Wait for the Cluster to Become Available
  
 After provisioning begins, wait for the cluster status to change to **Running**.
- 
+
 The Kubernetes worker nodes must be fully initialized before applications can be deployed.
- 
+
 Verify the cluster status in the Linode Cloud Manager.
- 
+
 ![LKE_deployment](images/linode_k8s_cluster_6.png)
 ![LKE_deployment](images/linode_k8s_cluster_7.png)
 
