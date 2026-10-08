@@ -422,10 +422,8 @@ This confirms that the data persisted on the Persistent Volumes even though the 
 ![Data_persistence](images/data_persistence_1.png)
 ![Data_persistence](images/data_persistence_2.png)
 
-### 9. Clean Up Resources
- 
-#### a. Remove Helm Releases
- 
+### 9. Clean Up Resources 
+#### a. Remove Helm Releases 
 List currently installed Helm releases:
  
 ```bash
@@ -445,8 +443,6 @@ helm uninstall nginx-ingress
 ```
  
 ![helm_uninstall](images/helm_uninstall_1.png)
-
-
 
 #### b. Delete the LKE Cluster
  
