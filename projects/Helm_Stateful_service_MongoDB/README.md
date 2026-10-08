@@ -168,7 +168,6 @@ helm repo update
 ```
  
 ![helm_bitnami](images/helm_repo_bitnami_1.png)
-![helm_bitnami](images/helm_repo_bitnami_list_1.png)
 
 #### c. Search for the MongoDB Chart
  
@@ -178,7 +177,7 @@ Confirm that the MongoDB chart is available.
 helm search repo bitnami/mongodb
 ```
 
-Insert screenshot
+![helm_bitnami](images/helm_repo_bitnami_list_1.png)
 
 #### d. Configure MongoDB Deployment Parameters
  
