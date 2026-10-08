@@ -145,7 +145,8 @@ Example for Windows:
 ```bash
 winget install Helm.Helm
 ```
- 
+![helm_install_windowsl](images/Helm-install-upgrade-windows-1.png)
+
 Verify the installation:
  
 ```bash
