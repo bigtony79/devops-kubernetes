@@ -90,7 +90,6 @@ The Kubernetes worker nodes must be fully initialized before applications can be
 Verify the cluster status in the Linode Cloud Manager.
 
 ![LKE_deployment](images/linode_k8s_cluster_6.png)
-![LKE_deployment](images/linode_k8s_cluster_7.png)
 
 ### 3. Download the Kubeconfig File
  
@@ -103,6 +102,8 @@ The kubeconfig file contains:
 - Context configuration used by kubectl
  
 Save the file locally.
+
+![LKE_deployment](images/linode_k8s_cluster_7.png)
 
 ### 4. Configure kubectl to Connect to the LKE Cluster
  
