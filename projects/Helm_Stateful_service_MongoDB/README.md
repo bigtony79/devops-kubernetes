@@ -73,9 +73,9 @@ During cluster creation:
 - Configure the worker node pool size and instance type.
 - Review the configuration and create the cluster.
  
-> In this project, the Kubernetes control plane is fully managed by Linode, allowing us to focus on deploying and managing applications.
+In this project, the Kubernetes control plane is fully managed by Linode, allowing us to focus on deploying and managing applications.
  
-INSERT SCREENSHOTS
+![LKE_deployment](images/linode_k8s_cluster_1.png)
 
 ### 2. Wait for the Cluster to Become Available
  
