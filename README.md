@@ -33,3 +33,5 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 1. [Deploy a MongoDB and Mongo Express into local K8s cluster](projects/MongoDB_MongDB_Express_K8s_Deployment/) 
 
 2. [Deploy Mosquitto message broker with ConfigMap and Secret Volume Types](projects/ConfigMap_Secret_Volume_types/)
+
+3. [Deploy Stateful Application using Helm](Projects/Helm_Stateful_service_MongoDB/)
