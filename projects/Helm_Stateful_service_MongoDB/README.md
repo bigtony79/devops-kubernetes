@@ -256,11 +256,7 @@ mongodb-2 -> PVC -> Volume
 
 ![LKE_Volumes](images/LKE-persistent-volumes-1.png) 
 
-
-INSERT SCREENSHOTS
-
 ### 6. Deploy Mongo Express and Configure External Access
- 
 #### a. Deploy Mongo Express
  
 Deploy Mongo Express, a web-based administration tool for MongoDB.
@@ -277,7 +273,7 @@ kubectl get pods
 kubectl get svc
 ```
  
-INSERT SCREENSHOTS
+![mongo_express_deployment](images/kubectl_mongo_express_deployment-1.png)
 
 #### b. Install the NGINX Ingress Controller
  
