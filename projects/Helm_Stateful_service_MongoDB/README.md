@@ -362,11 +362,13 @@ Using Mongo Express:
 1. Create a new database.
 
 ![Mongo_express_login](images/mongoexpress-2.png)
+
 ![Mongo_express_login](images/mongoexpress-3.png)
 
 2. Create a test collection.
 
 ![Mongo_express_login](images/mongoexpress-4.png)
+
 ![Mongo_express_login](images/mongoexpress-5.png)
 
 #### b. Scale Down the MongoDB Replica Set
@@ -377,6 +379,7 @@ Scale all MongoDB Pods down to zero replicas.
 kubectl scale --replicas=0 statefulset/mongodb
 ```
 ![MongoDB_scaledown](images/mongodb_scaledown-1.png)
+
 ![MongoDB_scaledown](images/mongodb_scaledown-2.png)
 
 Verify:
