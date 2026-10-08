@@ -285,6 +285,8 @@ helm install nginx-ingress \
 oci://ghcr.io/nginxinc/charts/nginx-ingress \
 --set controller.replicaCount=2
 ```
+
+![helm_install_nginx_controller](images/helm_install_nginx_controller-1.png)
  
 Verify installation:
  
@@ -292,24 +294,17 @@ Verify installation:
 kubectl get pods
 kubectl get svc
 ```
- 
-![NGINX_ingress_controller](images/ingress_rule_1.png)
-![NGINX_ingress_controller](images/ingress_rule_2.png)
-![NGINX_ingress_controller](images/ingress_rule_3.png)
-![NGINX_ingress_controller](images/ingress_rule_4.png)
-![NGINX_ingress_controller](images/ingress_rule_5.png)
+
+![helm_install_nginx_controller](images/helm_install_nginx_controller-2.png) 
+![helm_install_nginx_controller](images/helm_install_nginx_controller-3.png)
 
 #### c. Configure an Ingress Resource
- 
 After the Ingress Controller is installed, a Linode NodeBalancer will be automatically created.
-
 Retrieve the external hostname from the LKE portal.
 
 ![LKE_LoadBalancer](images/LKE_nodebalancer_1.png)
 ![LKE_LoadBalancer](images/LKE_nodebalancer_2.png)
- 
-INSERT SCREENSHOTS
- 
+  
 Update the hostname field in:
  
 ```text
@@ -335,7 +330,11 @@ Verify the Ingress resource:
 kubectl get ingress
 ```
  
-INSERT SCREENSHOTS
+![NGINX_ingress_controller](images/ingress_rule_1.png)
+![NGINX_ingress_controller](images/ingress_rule_2.png)
+![NGINX_ingress_controller](images/ingress_rule_3.png)
+![NGINX_ingress_controller](images/ingress_rule_4.png)
+![NGINX_ingress_controller](images/ingress_rule_5.png)
 
 ### 7. Access Mongo Express
  
