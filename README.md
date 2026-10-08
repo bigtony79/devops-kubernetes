@@ -34,4 +34,4 @@ This repository documents my hands‑on journey learning Kubernetes. It contains
 
 2. [Deploy Mosquitto message broker with ConfigMap and Secret Volume Types](projects/ConfigMap_Secret_Volume_types/)
 
-3. [Deploy Stateful Application using Helm](Projects/Helm_Stateful_service_MongoDB/)
+3. [Deploy Stateful Application using Helm](projects/Helm_Stateful_service_MongoDB/)
