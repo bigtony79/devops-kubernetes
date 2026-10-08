@@ -210,6 +210,8 @@ Verify that the release was successfully installed:
 helm ls
 ```
 
+![helm_mongodb_install](images/helm_install_mongodb_chart_1.png)
+
 #### f. Verify the Deployment
  
 Check the status of the deployed resources.
