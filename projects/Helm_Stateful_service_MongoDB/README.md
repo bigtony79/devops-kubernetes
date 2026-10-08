@@ -120,11 +120,11 @@ The connection to the server localhost:8080 was refused
 ```
  
 ![set_kubectl](images/set_kubectl_linode_1.png)
- 
+
 Configure kubectl to use the downloaded kubeconfig file:
  
 ```bash
-export KUBECONFIG=lke-cluster.yaml
+export KUBECONFIG=test-kubeconfig.yaml
 ```
  
 Verify connectivity:
@@ -132,17 +132,8 @@ Verify connectivity:
 ```bash
 kubectl get nodes
 ```
- 
-Expected output:
- 
-```text
-NAME STATUS ROLES
-lke-node-1 Ready
-lke-node-2 Ready
-lke-node-3 Ready
-```
- 
-INSERT SCREENSHOTS
+
+![set_kubectl](images/set_kubectl_linode_2.png)
 
 ### 5. Deploy MongoDB StatefulSet Using Helm
  
