@@ -100,7 +100,7 @@ The kubeconfig file contains:
 - Cluster endpoint information
 - Authentication credentials
 - Context configuration used by kubectl
- 
+
 Save the file locally.
 
 ![LKE_deployment](images/linode_k8s_cluster_7.png)
