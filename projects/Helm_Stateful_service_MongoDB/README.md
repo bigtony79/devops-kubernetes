@@ -296,7 +296,6 @@ kubectl get svc
 ```
 
 ![helm_install_nginx_controller](images/helm_install_nginx_controller-2.png) 
-![helm_install_nginx_controller](images/helm_install_nginx_controller-3.png)
 
 #### c. Configure an Ingress Resource
 After the Ingress Controller is installed, a Linode NodeBalancer will be automatically created.
@@ -352,7 +351,7 @@ Verify that:
 - Authentication works correctly.
 - The application can connect to the MongoDB Replica Set.
  
-INSERT SCREENSHOTS
+![Mongo_express_login](images/mongoexpress-2.png)
 
 ### 8. Validate Data Persistence and Resiliency
  
@@ -363,7 +362,14 @@ Using Mongo Express:
 1. Create a new database.
 2. Create a test collection.
 
-INSERT SCREENSHOTs
+![Mongo_express_login](images/mongoexpress-2.png)
+![Mongo_express_login](images/mongoexpress-3.png)
+![Mongo_express_login](images/mongoexpress-4.png)
+![Mongo_express_login](images/mongoexpress-5.png)
+
+
+
+
 
 #### b. Scale Down the MongoDB Replica Set
  
