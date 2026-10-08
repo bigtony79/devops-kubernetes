@@ -353,8 +353,7 @@ Verify that:
  
 ![Mongo_express_login](images/mongoexpress-2.png)
 
-### 8. Validate Data Persistence and Resiliency
- 
+### 8. Validate Data Persistence and Resiliency 
 #### a. Create a Test Database
  
 Using Mongo Express:
@@ -397,6 +396,8 @@ Restore the deployment.
 ```bash
 kubectl scale --replicas=3 statefulset/mongodb
 ```
+
+![MongoDB_scaleup](images/mongodb_scaleup-1.png)
  
 Verify:
  
@@ -406,7 +407,8 @@ kubectl get pods
  
 Wait until all Pods return to the **Running** state.
  
-INSERT SCREENSHOTS
+![MongoDB_scaleup](images/mongodb_scaleup-2.png)
+ 
 
 #### d. Validate Data Persistence
  
