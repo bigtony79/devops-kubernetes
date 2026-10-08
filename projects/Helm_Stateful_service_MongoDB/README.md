@@ -166,7 +166,7 @@ Update local repository metadata:
 ```bash
 helm repo update
 ```
-![helm_bitnami](images/helm_repo_search_mongodb_1.png) 
+![helm_repo_search](images/helm_repo_search_mongodb_1.png) 
 ![helm_bitnami](images/helm_repo_bitnami_1.png)
 
 #### c. Search for the MongoDB Chart
