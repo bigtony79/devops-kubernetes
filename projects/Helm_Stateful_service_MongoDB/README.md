@@ -274,6 +274,7 @@ kubectl get svc
 ```
  
 ![mongo_express_deployment](images/kubectl_mongo_express_deployment-1.png)
+![mongo_express_deployment](images/kubectl_mongo_express_deployment-2.png)
 
 #### b. Install the NGINX Ingress Controller
  
