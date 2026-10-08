@@ -360,16 +360,14 @@ Verify that:
 Using Mongo Express:
  
 1. Create a new database.
-2. Create a test collection.
 
 ![Mongo_express_login](images/mongoexpress-2.png)
 ![Mongo_express_login](images/mongoexpress-3.png)
+
+2. Create a test collection.
+
 ![Mongo_express_login](images/mongoexpress-4.png)
 ![Mongo_express_login](images/mongoexpress-5.png)
-
-
-
-
 
 #### b. Scale Down the MongoDB Replica Set
  
@@ -378,14 +376,16 @@ Scale all MongoDB Pods down to zero replicas.
 ```bash
 kubectl scale --replicas=0 statefulset/mongodb
 ```
- 
+![MongoDB_scaledown](images/mongodb_scaledown-1.png)
+![MongoDB_scaledown](images/mongodb_scaledown-2.png)
+
 Verify:
  
 ```bash
 kubectl get pods
 ```
  
-INSERT SCREENSHOTS
+![MongoDB_scaledown](images/mongodb_scaledown-3.png)
 
 #### c. Scale the Replica Set Back Up
  
