@@ -135,8 +135,7 @@ kubectl get nodes
 
 ![set_kubectl](images/set_kubectl_linode_2.png)
 
-### 5. Deploy MongoDB StatefulSet Using Helm
- 
+### 5. Deploy MongoDB StatefulSet Using Helm 
 #### a. Install Helm
  
 Install Helm using the package manager appropriate for your operating system.
