@@ -419,7 +419,8 @@ Reconnect to Mongo Express and verify that:
  
 This confirms that the data persisted on the Persistent Volumes even though the Pods were destroyed and recreated.
  
-INSERT SCREENSHOTS
+![Data_persistence](images/data_persistence_1.png)
+![Data_persistence](images/data_persistence_2.png)
 
 ### 9. Clean Up Resources
  
