@@ -152,8 +152,6 @@ Verify the installation:
 ```bash
 helm version
 ```
- 
-INSERT SCREENSHOTS
 
 #### b. Add the Bitnami Helm Repository
  
@@ -169,7 +167,8 @@ Update local repository metadata:
 helm repo update
 ```
  
-INSERT SCREENSHOTS
+![helm_bitnami](images/helm_repo_bitnami_1.png)
+![helm_bitnami](images/helm_repo_bitnami_list_1.png)
 
 #### c. Search for the MongoDB Chart
  
