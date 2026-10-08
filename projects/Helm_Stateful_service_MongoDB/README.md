@@ -3,11 +3,10 @@
 ## Overview
 
 This project demonstrates how to deploy a highly available MongoDB database on a managed Kubernetes cluster using Helm. The deployment uses a MongoDB Replica Set running as a StatefulSet, with persistent storage dynamically provisioned through Linode Kubernetes Engine (LKE).
- 
+
 In addition to the database layer, Mongo Express is deployed as a web-based administration interface, allowing database management directly from a browser. An NGINX Ingress Controller is configured to provide external access to the application.
- 
-This project highlights several key Kubernetes concepts, including:
- 
+
+This project highlights several key Kubernetes concepts, including: 
 - Managed Kubernetes clusters with Linode Kubernetes Engine (LKE)
 - Stateful applications using Kubernetes StatefulSets
 - Persistent volumes and dynamic storage provisioning
@@ -29,9 +28,7 @@ This project highlights several key Kubernetes concepts, including:
 * kubectl
 
 ## Pre-requisites
-
 Before starting this project, ensure the following tools and accounts are available:
-
 * Linode account
 * Kubernetes cluster administrator permissions
 * kubectl installed locally
