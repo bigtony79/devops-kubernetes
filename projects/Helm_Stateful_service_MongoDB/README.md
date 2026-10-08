@@ -444,8 +444,10 @@ Uninstall the NGINX Ingress Controller:
 helm uninstall nginx-ingress
 ```
  
-INSERT SCREENSHOTS
- 
+![helm_uninstall](images/helm_uninstall_1.png)
+
+
+
 #### b. Delete the LKE Cluster
  
 Navigate to the LKE portal and delete the Kubernetes cluster.
@@ -456,7 +458,7 @@ This removes:
 - Control plane resources
 - Kubernetes networking components
  
-INSERT SCREENSHOTS
+![helm_uninstall](images/helm_uninstall_2.png)
  
 #### c. Remove Unattached Persistent Volumes
  
@@ -464,7 +466,7 @@ Deleting the cluster does not automatically delete associated storage volumes.
  
 Review the list of remaining volumes and remove any unattached volumes to avoid unnecessary charges.
  
-INSERT SCREENSHOTS
+![helm_uninstall](images/helm_uninstall_3.png)
 
 ## Learning Outcomes
 
