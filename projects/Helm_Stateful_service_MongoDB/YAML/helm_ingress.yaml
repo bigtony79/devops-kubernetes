@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: 69-164-197-54.ip.linodeusercontent.com
+  - host: 69-164-197-54.ip.linodeusercontent.com #Replace with the hostname of the NodeBalancer
     http:
       paths:
         - path: /
