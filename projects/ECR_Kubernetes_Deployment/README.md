@@ -22,7 +22,7 @@
 
 ### 2. Go to ECR and obtain docker login command
 
-### 3. Run command to created ~/.docker/config.json file
+### 3. Run command to create ~/.docker/config.json file
 
 ### 4. Create secret off the config.js file
 
