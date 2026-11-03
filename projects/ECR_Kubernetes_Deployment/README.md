@@ -19,6 +19,7 @@
 ## Steps
 
 ### 1. Get LKE working
+Please follow steps 1 - 4 from projects/Helm_Stateful_service_MongoDB/README.md
 
 ### 2. Go to ECR and obtain docker login command
 
