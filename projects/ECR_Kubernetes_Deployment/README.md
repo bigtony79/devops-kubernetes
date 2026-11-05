@@ -2,19 +2,63 @@
 
 ## Overview
 
+This project demonstrates how to deploy a containerized web application to a Kubernetes cluster hosted on Linode Kubernetes Engine (LKE) using a container image stored in a private Amazon Elastic Container Registry (Amazon ECR) repository.
+
+The deployment process includes creating Kubernetes image pull secrets, configuring the deployment to authenticate with a private registry, and deploying the application into the cluster.
+
+
 ## Technologies used
-* Kubernetes
-* Helm
-* AWS
-* ECR
+* Linode Kubernetes Engine (LKE)
+* Amazon Web Services (AWS)
+* Amazon Elastic Container Registry (ECR)
 * Docker
+* kubectl
 
 ## Project Description:
-* Create Secret for credentials for the private Docker registry
-* Configure the Docker registry secret in application Deployment component
-* Deploy web application image from our private Docker registry in K8s cluster
+
+In this project, you will learn how to:
+
+* Create a Kubernetes secret for authenticating to a private Docker registry.
+* Configure a Kubernetes deployment to use the registry secret.
+* Deploy a container image stored in a private Amazon ECR repository.
+* Verify that the application is successfully running within the Kubernetes cluster.
+
+## Architecture
+
+Amazon ECR (Private Repository)
+            │
+            │ Image Pull
+            ▼
+ Kubernetes Secret
+ (Docker Registry Credentials)
+            │
+            ▼
+ Linode Kubernetes Engine (LKE)
+            │
+            ▼
+ Application Deployment
+            │
+            ▼
+        Running Pods
 
 ## Pre-requisites
+
+Before starting, ensure you have:
+
+* An AWS account with access to Amazon ECR
+* A Linode account
+* AWS CLI installed and configured
+* Docker installed
+* kubectl installed
+* Permissions to create Kubernetes resources within the cluster
+
+Verify the required tools:
+
+```
+    aws --version
+    docker --version
+    kubectl version --client
+```
 
 ## Steps
 
@@ -104,22 +148,69 @@ kubectl get nodes
 
 ![set_kubectl](images/set_kubectl_linode_2.png)
 
-### 5. Go to ECR and obtain docker login command
+### 5. Retrieve the Docker Login Command from Amazon ECR
 
-### 6. Run command to create ~/.docker/config.json file
+Sign in to the AWS Management Console and navigate to Elastic Container Registry (ECR).
+
+Select your private repository and locate the View Push Commands option. Copy the Docker authentication command provided by AWS.
+
+![ecr](images/ECR_private_repo_1.png)
+![ecr](images/ECR_private_repo_2.png)
+
+### 6. Authenticate Docker with Amazon ECR
+
+Run the ECR login command to authenticate Docker and generate the local Docker configuration file (~/.docker/config.json).
 
 ```
     aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 941837437887.dkr.ecr.us-east-1.amazonaws.com
 ```
 
-### 7. Create secret off the config.js file
+### 7. Create a Kubernetes Docker Registry Secret
+
+Create a Kubernetes secret using the Docker configuration file generated in the previous step.
 
 ```
     kubectl create secret generic docker-secret-key --from-file=.dockerconfigjson=/home/dataeng/.docker/config.json --type=kubernetes.io/dockerconfigjson
-    kubectl get secret
+    kubectl get secrets
 ```
 
-### 8. Deploy container; image name must contain full URL; add secret reference in the deployment
+![k8s_secrets](images/kubernetes_secret.png)
+
+### 8. Deploy the Application
+
+Update your deployment manifest to:
+* Use the full Amazon ECR image URL.
+* Reference the Kubernetes image pull secret using imagePullSecrets.
+
+Example:
+```
+    imagePullSecrets:
+        - name: docker-secret-key
+```
+
+Deploy the application:
+```
+    kubectl apply -f app-deployment.yaml
+```
+
+Verify the deployment:
+```
+    kubectl get deployments
+    kubectl get pods
+```
+
+![k8s_deployement](images/kubectl_apply_deployment.png)
 
 ## Learning Outcomes
+By completing this project, you will gain hands-on experience with:
+
+* Kubernetes deployments
+* Private container registries
+* Amazon ECR authentication
+* Kubernetes Secrets
+* ImagePullSecrets configuration
+* kubectl administration
+* Deploying applications on Linode Kubernetes Engine (LKE)
+* Managing containerized workloads across cloud platforms
+
 
