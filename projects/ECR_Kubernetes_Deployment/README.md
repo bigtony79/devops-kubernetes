@@ -25,6 +25,7 @@ In this project, you will learn how to:
 
 ## Architecture
 
+```
 Amazon ECR (Private Repository)
             │
             │ Image Pull
@@ -40,6 +41,7 @@ Amazon ECR (Private Repository)
             │
             ▼
         Running Pods
+```
 
 ## Pre-requisites
 
