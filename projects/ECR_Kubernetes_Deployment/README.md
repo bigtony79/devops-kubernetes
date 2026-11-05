@@ -30,8 +30,7 @@ Amazon ECR (Private Repository)
             │
             │ Image Pull
             ▼
- Kubernetes Secret
- (Docker Registry Credentials)
+ Kubernetes Secret (Docker Registry Credentials)
             │
             ▼
  Linode Kubernetes Engine (LKE)
